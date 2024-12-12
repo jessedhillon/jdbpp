@@ -1,0 +1,10 @@
+[project]
+dependencies = [
+    "fancycompleter==0.9.1",
+    "pygments==2.18"
+]
+dynamic = [ "version" ]
+name = "jdbpp"
+
+[tool.setuptools.dynamic]
+version = { attr = "jdbpp.__version__" }
